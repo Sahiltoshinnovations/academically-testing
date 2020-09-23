@@ -1,0 +1,49 @@
+/*[ hun-section-brands ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Layout 1
+ *
+\*/
+.hun-section-brands.layout-1 {
+	.item-brand {
+		text-align: center;
+		padding: 30px 20px;
+
+		a {
+			opacity: .5;
+			transition: all .2s;
+
+			&:hover {
+				opacity: 1 !important;
+			}
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&.grey-brand .item-brand a {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+
+	&.white-brand .item-brand a {
+		-webkit-filter: brightness(0) invert(1);
+		filter: brightness(0) invert(1);
+	}
+
+	&.hover-not-filter .item-brand a:hover {
+		-webkit-filter: none !important;
+		filter: none !important;
+	}
+
+	&.full-width {
+		.container {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>October CMS - {{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="OctoberCMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link rel="icon" type="image/jpeg" href="{{ 'assets/images/1.jpeg'|theme }}">
+            <link rel="icon" type="image/png" href="{{ 'assets/css/images/icons/academically-logo-democratizing-online-education-learning-knowledge-purple.png'|theme }}"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/fonts/font-awesome-4/css/font-awesome.min.css'|theme }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/fonts/ionicons/css/ionicons.min.css'|theme }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/fonts/simple-line-icons/css/simple-line-icons.css'|theme }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/libs/bootstrap/bootstrap.min.css'|theme }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/libs/slick/slick-1.9.0.css'|theme }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/libs/magnific-popup/magnific-popup.css'|theme }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/libs/animate/animate.css'|theme }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/libs/animsition/animsition.min.css'|theme }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/libs/parallax100/parallax100.css'|theme }}">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/css/stylecss/style.css'|theme }}">
+    <!--===============================================================================================-->
+        {% styles %}
+    </head>
+   <body class="animsition">
+
+<div class="hun-page">
+
+        <!-- Header -->
+        <header class="hun-section-header hun-header layout-1 style-overlay text-light align-left style-sticky use-text-logo">
+            {% partial 'site/headeroctober' %}
+        </header>
+
+        <!-- Content -->
+        <section id="layout-content">
+            {% page %}
+        </section>
+
+
+</div>
+        <!-- Scripts -->
+        <script src="{{ 'assets/vendor/octobercms/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/vendor/octobercms/bootstrap.js'|theme }}"></script>
+        <script src="{{ 'assets/javascript/octobercms/app.js'|theme }}"></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>
